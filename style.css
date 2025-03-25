@@ -85,6 +85,7 @@ a {
     text-align: center;
     width: 207px;
     height: 301px;
+    margin-right: 1vw;
 }
 
 #principal {
@@ -97,8 +98,8 @@ a {
 }
 
 h1 {
-    max-width: 13em;
-    font-size: 1.4em;
+    max-width: 270px;
+    font-size: 1.2em;
     line-height: 1.5em;
     margin: auto;
     text-align: center;
@@ -106,8 +107,8 @@ h1 {
 }
 
 p {
-    font-size: 16px;
-    margin-top: 2.5dvh;
+    font-size: 15px;
+    margin-top: 6vh;
     width: 190px;
     line-height: 1.3em;
 }
@@ -118,13 +119,14 @@ p {
 }
 
 #short-normal {
-    width: 110px;
+    width: 105px;
     height: 107px;
 }
 
 #secao-1 {
     display: flex;
     background-color: #F8EEEE;
+    width: 98%;
 }
 
 #direita {
@@ -135,15 +137,13 @@ p {
 
 #secao-2 {
     padding-top: 25px;
-    height: 29em;
+    width: 98%;
+
 }
 
 #secundario {
     display: flex;
     justify-content: center;
-
-    margin-top: 1dvh;
-    margin-left: 1dvw;
     background-color: #F8EEEE;
     flex-wrap: wrap;
     padding-top: 1em;
@@ -154,20 +154,20 @@ p {
     width: 200px;
     text-align: center;
     margin-top: 2em;
-    margin-right: 1em;
+    margin-right: 0.5em;
 
 }
 
 .colecoes-1 {
 
-    width: 150px;
-    height: 200px;
+    width: 135px;
+    height: 185px;
 }
 
 .colecoes-2 {
-    margin-right: 12em;
-    width: 150px;
-    height: 200px;
+    margin-right: 10em;
+    width: 135px;
+    height: 185px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -175,13 +175,13 @@ p {
 h2 {
     margin: auto;
     margin-bottom: 1em;
-    width: 80%;
-    font-size: 1.5em;
+    width: 300px;
+    font-size: 1.2em;
     line-height: 1.5em;
 }
 
 #galeria {
-    margin-top: 3em;
+    padding-top: 5vh;
     text-align: center;
 }
 
@@ -210,6 +210,78 @@ figcaption {
     margin-bottom: 1em;
     width: 150px;
 }
+
+/*--------------------------------------------------------------------------------------------*/
+
+#comentarios {
+    background-color: #F8EEEE; /* Cor de fundo para a seção */
+    border: 2px solid #bf6c5ae0; /* Borda de 2px com a mesma cor do botão */
+    border-radius: 10px; /* Arredondando os cantos */
+    padding: 20px 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto dentro da seção */
+    position: relative; /* Necessário para posicionar os controles de navegação dentro da seção */
+    width: 95%;
+    margin: auto;
+}
+
+.carrossel {
+     /* Usamos flexbox para alinhar os itens na horizontal */
+    overflow: hidden; /* Esconde os itens que ultrapassarem o limite da área */
+    position: relative; /* Necessário para garantir que os controles de navegação fiquem dentro do carrossel */
+}
+
+.comentarios {
+    display: flex; /* Para que os itens (comentários) fiquem lado a lado */
+    transition: transform 0.5s ease; /* Transição suave para a mudança de posição */
+}
+
+
+.comentario {
+    background-color: #fff;
+    min-width: 50%; /* Garante que cada comentário ocupe metade da largura do carrossel */
+    text-align: center; /* Centraliza o conteúdo dentro do comentário */
+}
+
+.nav {
+    position: absolute; /* Coloca a navegação fora do fluxo normal do layout, permitindo que fiquem posicionados livremente */
+    top: 90%; /* Faz com que a navegação fique logo abaixo do carrossel */
+    left: 50%; /* Posiciona a navegação no centro horizontal */
+    transform: translateX(-50%); /* Compensa o deslocamento da posição (ficando exatamente no centro) */
+    display: flex; /* Alinha os botões de navegação lado a lado */
+}
+
+
+.nav-btn {
+    width: 10px; /* Largura das bolinhas */
+    height: 10px; /* Altura das bolinhas */
+    background-color: #000; /* Cor de fundo das bolinhas */
+    border-radius: 50%; /* Deixa as bolinhas redondas */
+    margin: 0 5px; /* Espaçamento entre as bolinhas */
+    cursor: pointer; /* Mostra que são interativas (indicando que o usuário pode clicar) */
+}
+
+#comentario1:checked ~ .comentarios {
+    transform: translateX(0);
+}
+
+#comentario2:checked ~ .comentarios {
+    transform: translateX(-100%);
+}
+
+#comentario3:checked ~ .comentarios {
+    transform: translateX(-200%);
+}
+
+#titulo-comentarios {
+    width: 180px;
+    font-size: 1.2em;
+}
+
+.comentario p {
+    width: 98%;
+}
+
+
 
 
 
