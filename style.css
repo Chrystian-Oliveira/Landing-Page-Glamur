@@ -12,9 +12,9 @@ header {
     margin-bottom: 1.5em;
 }
 
-    body {
-        background-color: #F8EEEE;
-    }
+body {
+    background-color: #F8EEEE;
+}
 
 #cabeçalho {
     display: flex;
@@ -98,7 +98,7 @@ a {
 
 h1 {
     max-width: 13em;
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.5em;
     margin: auto;
     text-align: center;
@@ -106,7 +106,7 @@ h1 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 2.5dvh;
     width: 195px;
     line-height: 1.3em;
