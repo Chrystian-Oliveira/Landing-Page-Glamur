@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
     margin: 0;
@@ -69,23 +70,14 @@ a {
 }
 
 #forma {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    width: 175px;
-    height: 282px;
-    background-color: #dac6c6;
-    border-radius: 50% 50% 0 0;
-    box-shadow: -10px 7px 50px 0px rgba(0, 0, 0, 0.30);
-    margin-left: 2dvw;
-    margin-top: 50px;
+padding-left: 2px;
 }
 
 #modelo-jeans {
-    text-align: center;
-    width: 207px;
-    height: 301px;
-    margin-right: 1vw;
+    width: 195px;
+    height: 300px;
+    margin-right: .5vw;
+    margin-top: 10px;
 }
 
 #principal {
@@ -98,6 +90,7 @@ a {
 }
 
 h1 {
+    font-family: "Playfair Display", serif;
     max-width: 270px;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -107,6 +100,7 @@ h1 {
 }
 
 p {
+    font-family: "Lora", serif;
     font-size: 15px;
     margin-top: 6vh;
     width: 190px;
@@ -173,6 +167,7 @@ p {
 /*-----------------------------------------------------------------------------------*/
 
 h2 {
+    font-family: "Playfair Display", serif;
     margin: auto;
     margin-bottom: 1em;
     width: 300px;
@@ -225,7 +220,6 @@ figcaption {
 }
 
 .carrossel {
-     /* Usamos flexbox para alinhar os itens na horizontal */
     overflow: hidden; /* Esconde os itens que ultrapassarem o limite da área */
     position: relative; /* Necessário para garantir que os controles de navegação fiquem dentro do carrossel */
 }
@@ -233,6 +227,8 @@ figcaption {
 .comentarios {
     display: flex; /* Para que os itens (comentários) fiquem lado a lado */
     transition: transform 0.5s ease; /* Transição suave para a mudança de posição */
+    align-items: center;
+    padding-top: 0.6em;
 }
 
 
@@ -281,9 +277,422 @@ figcaption {
     width: 98%;
 }
 
+/*------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 690px) and (max-width: 768px) {
+    #cabeçalho {
+        justify-content: space-between;
+        padding: 0 45px 0 45px;
+    }
+
+    #logo {
+        width: 180px;
+        height: 162px;
+    }
+
+    a {
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+    }
+
+    h1 {
+        max-width: 350px;
+        font-size: 1.7em;
+        margin-bottom: 2em;
+    }
+
+    #secao-1 {
+        margin: auto;
+        width: 45em;
+    }
+
+    #forma {
+        width: 228px;
+        height: 330px;
+    }
+
+    #modelo-jeans {
+        width: 255px;
+        height: 382px;
+    }
+
+    p {
+        font-size: 1.4em;
+        width: 280px;
+        line-height: 1.5em;
+        margin-top: 0;
+    }
+
+    #short-curto {
+        width: 120px;
+        height: 140px;
+    }
+
+    #short-normal {
+        width: 140px;
+        height: 140px;
+    }
+
+
+    #secao-2 {
+        padding-top: 10em;
+        width: 45em;
+    }
+
+    #desc-complementar {
+        width: 276px;
+        margin-right: 4em;
+    }
+
+    .colecoes-1 {
+        width: 250px;
+        height: 300px;
+    }
+
+    .colecoes-2{
+        width: 250px;
+        height: 300px;
+        margin-right: 21em;
+    }
 
 
 
+    #galeria {
+        padding-top: 10vh;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5em;
+        width: 350px;
+        margin-bottom: 3em;
+    }
+
+    .grupo-imagens {
+        width: 200px;
+        height: 260px;
+    }
+
+    figcaption {
+        margin-bottom: 2em;
+        padding-top: 0.5em;
+        font-size: 1.1em;
+        width: 200px;
+    }
 
 
 
+    #titulo-comentarios {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5em;
+        width: 350px;
+        margin-bottom: 3em;
+    }
+
+    #comentarios {
+        margin-bottom: 2em;
+    }
+
+    .comentario p {
+        width: 12em;
+        font-size: 1.4em;
+    }
+
+    .nome {
+        padding-top: 1em;
+    }
+}
+
+@media (min-width: 768.5px) and (max-width: 992px) {
+
+    #cabeçalho {
+        justify-content: space-between;
+        padding: 0 45px 0 45px;
+    }
+
+    #logo {
+        width: 260px;
+        height: 242px;
+    }
+
+    a {
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+    }
+
+    h1 {
+        max-width: 420px;
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+
+    #secao-1 {
+        margin: auto;
+        width: 45em;
+    }
+
+    #forma {
+        width: 228px;
+        height: 330px;
+    }
+
+    #modelo-jeans {
+        width: 300px;
+        height: 458px;
+    }
+
+    #principal {
+        margin-left: 10em;
+    }
+
+    p {
+        font-size: 1.4em;
+        width: 280px;
+        line-height: 1.5em;
+        margin-top: 0;
+    }
+
+    #short-curto {
+        width: 120px;
+        height: 140px;
+    }
+
+    #short-normal {
+        width: 140px;
+        height: 140px;
+    }
+
+
+    #secao-2 {
+        padding-top: 10em;
+        width: 45em;
+        margin: auto;
+    }
+
+    #desc-complementar {
+        width: 276px;
+        margin-right: 4em;
+    }
+
+    .colecoes-1 {
+        width: 250px;
+        height: 300px;
+    }
+
+    .colecoes-2{
+        width: 250px;
+        height: 300px;
+        margin-right: 21em;
+    }
+
+
+
+    #galeria {
+        padding-top: 10vh;
+        text-align: center;
+        width: 55em;
+        margin:auto;
+    }
+
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.7em;
+        width: 400px;
+        margin-bottom: 3em;
+    }
+
+    .grupo-imagens {
+        width: 200px;
+        height: 260px;
+    }
+
+    figcaption {
+        margin-bottom: 2em;
+        padding-top: 0.5em;
+        font-size: 1.1em;
+        width: 200px;
+    }
+
+
+
+    #titulo-comentarios {
+        font-family: "Playfair Display", serif;
+        font-size: 1.7em;
+        width: 350px;
+        margin-bottom: 2em;
+    }
+
+    #comentarios {
+        margin-bottom: 2em;
+    }
+
+    .comentario p {
+        width: 15em;
+        font-size: 1.4em;
+        padding-left: 3em;
+        padding-top: 0.6em;
+    }
+
+    .comentarios {
+        margin-top: 1em;
+    }
+
+    .nome {
+        padding-top: 1em;
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+@media (min-width: 993px) and (max-width: 1375px){
+
+    header {
+        margin-bottom: 0;
+    }
+
+    #cabeçalho {
+        justify-content: space-between;
+        padding: 0 80px 0 80px;
+
+    }
+
+    #logo {
+        width: 260px;
+        height: 235px;
+    }
+
+    a {
+        font-size: 20px;
+        width: 280px;
+        height: 40px;
+    }
+
+    #comprar {
+        margin-bottom: 3em;
+    }
+
+    h1 {
+        max-width: 500px;
+        font-size: 2.5em;
+        margin-bottom: 2em;
+    }
+
+    #secao-1 {
+        margin: auto;
+        width: 67em;
+    }
+
+    #forma {
+        width: 228px;
+        height: 330px;
+    }
+
+    #modelo-jeans {
+        width: 350px;
+        height: 475px;
+    }
+
+    #principal {
+        margin-left: 13em;
+    }
+
+    p {
+        font-size: 1.8em;
+        width: 500px;
+        line-height: 1.5em;
+        margin-top: 0;
+    }
+
+    #short-curto {
+        width: 200px;
+        height: 220px;
+        margin-right: 3em;
+    }
+
+    #short-normal {
+        width: 250px;
+        height: 220px;
+    }
+
+
+    #secao-2 {
+        padding-top: 8em;
+        width: 67em;
+        margin: auto;
+    }
+
+    #desc-complementar {
+        width: 500px;
+        margin-right: 6em;
+    }
+
+    .colecoes-1 {
+        width: 350px;
+        height: 400px;
+    }
+
+    .colecoes-2{
+        width: 350px;
+        height: 400px;
+        margin-right: 30em;
+    }
+
+
+
+    #galeria {
+        padding-top: 10vh;
+        text-align: center;
+        width: 67em;
+        margin:auto;
+    }
+
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.3em;
+        width: 500px;
+        margin-bottom: 3em;
+    }
+
+    .grupo-imagens {
+        width: 300px;
+        height: 360px;
+    }
+
+    figcaption {
+        margin-bottom: 2em;
+        padding-top: 0.5em;
+        font-size: 1.5em;
+        width: 360px;
+    }
+
+
+
+    #titulo-comentarios {
+        font-family: "Playfair Display", serif;
+        font-size: 2.3em;
+        width: 400px;
+        margin-bottom: 2em;
+    }
+
+    #comentarios {
+        margin-bottom: 2em;
+    }
+
+    .comentario p {
+        width: 17em;
+        font-size: 1.8em;
+        padding-left: 4.3em;
+        padding-top: 0.6em;
+    }
+
+    .comentarios {
+        margin-top: 1em;
+    }
+
+    .nome {
+        padding-top: 1em;
+    }
+}
