@@ -70,6 +70,7 @@ a {
 }
 
 #forma {
+
 padding-left: 2px;
 }
 
@@ -120,7 +121,7 @@ p {
 #secao-1 {
     display: flex;
     background-color: #F8EEEE;
-    width: 98%;
+    width: 95dvw;
 }
 
 #direita {
@@ -131,7 +132,8 @@ p {
 
 #secao-2 {
     padding-top: 25px;
-    width: 98%;
+    width: 95dvw;
+    margin: auto;
 
 }
 
@@ -178,6 +180,8 @@ h2 {
 #galeria {
     padding-top: 5vh;
     text-align: center;
+    width: 95dvw;
+    margin: auto;
 }
 
 #imagens-galeria {
@@ -277,6 +281,18 @@ figcaption {
     width: 98%;
 }
 
+footer {
+    background-color: #BF6C5A;
+}
+
+footer p {
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-top: 5px;
+}
+
 /*------------------------------------------------------------------------------------------------------*/
 
 @media (min-width: 690px) and (max-width: 768px) {
@@ -304,7 +320,7 @@ figcaption {
 
     #secao-1 {
         margin: auto;
-        width: 45em;
+        width: 95dvw;
     }
 
     #forma {
@@ -337,7 +353,8 @@ figcaption {
 
     #secao-2 {
         padding-top: 10em;
-        width: 45em;
+        width: 95dvw;
+        margin: auto;
     }
 
     #desc-complementar {
@@ -361,6 +378,8 @@ figcaption {
     #galeria {
         padding-top: 10vh;
         text-align: center;
+        width: 95dvw;
+        margin: auto;
     }
 
     h2 {
@@ -382,8 +401,6 @@ figcaption {
         width: 200px;
     }
 
-
-
     #titulo-comentarios {
         font-family: "Playfair Display", serif;
         font-size: 1.5em;
@@ -403,6 +420,8 @@ figcaption {
     .nome {
         padding-top: 1em;
     }
+
+
 }
 
 @media (min-width: 768.5px) and (max-width: 992px) {
@@ -431,7 +450,7 @@ figcaption {
 
     #secao-1 {
         margin: auto;
-        width: 45em;
+        width: 95dvw;
     }
 
     #forma {
@@ -468,7 +487,7 @@ figcaption {
 
     #secao-2 {
         padding-top: 10em;
-        width: 45em;
+        width: 95dvw;
         margin: auto;
     }
 
@@ -493,7 +512,7 @@ figcaption {
     #galeria {
         padding-top: 10vh;
         text-align: center;
-        width: 55em;
+        width: 95dvw;
         margin:auto;
     }
 
@@ -542,6 +561,10 @@ figcaption {
 
     .nome {
         padding-top: 1em;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 }
 
@@ -596,11 +619,11 @@ figcaption {
     }
 
     #principal {
-        margin-left: 13em;
+        margin-left: 10em;
     }
 
     p {
-        font-size: 1.8em;
+        font-size: 1.6em;
         width: 500px;
         line-height: 1.5em;
         margin-top: 0;
@@ -630,13 +653,13 @@ figcaption {
     }
 
     .colecoes-1 {
-        width: 350px;
-        height: 400px;
+        width: 280px;
+        height: 330px;
     }
 
     .colecoes-2{
-        width: 350px;
-        height: 400px;
+        width: 280px;
+        height: 330px;
         margin-right: 30em;
     }
 
@@ -668,8 +691,6 @@ figcaption {
         width: 360px;
     }
 
-
-
     #titulo-comentarios {
         font-family: "Playfair Display", serif;
         font-size: 2.3em;
@@ -694,5 +715,175 @@ figcaption {
 
     .nome {
         padding-top: 1em;
+    }
+
+    footer p {
+        font-size: 18px;
+        width: 20em;
+    }
+}
+
+
+
+@media (min-width: 1376px) and (max-width: 1920px) {
+
+    header {
+        margin-bottom: 0;
+        width: 85dvw;
+        margin: auto;
+    }
+
+    main {
+        width: 85dvw;
+        margin: auto;
+    }
+
+    #cabeçalho {
+        justify-content: space-between;
+        padding: 0 80px 0 80px;
+
+    }
+
+    #logo {
+        width: 280px;
+        height: 245px;
+    }
+
+    a {
+        font-size: 26px;
+        width: 280px;
+        height: 40px;
+    }
+
+    #comprar {
+        margin-bottom: 3em;
+    }
+
+    h1 {
+        max-width: 500px;
+        font-size: 2.5em;
+        margin-bottom: 2em;
+    }
+
+    #secao-1 {
+        margin: auto;
+        width: 70dvw;
+        height: 30.5em;
+    }
+
+    #forma {
+        width: 228px;
+        height: 330px;
+    }
+
+    #modelo-jeans {
+        width: 350px;
+        height: 475px;
+    }
+
+    #principal {
+        margin-left: 10em;
+    }
+
+    p {
+        font-size: 1.6em;
+        width: 500px;
+        line-height: 1.5em;
+        margin-top: 0;
+    }
+
+    #short-curto {
+        width: 200px;
+        height: 220px;
+        margin-right: 3em;
+    }
+
+    #short-normal {
+        width: 250px;
+        height: 220px;
+    }
+
+
+    #secao-2 {
+        padding-top: 8em;
+        width: 70dvw;
+        margin: auto;
+    }
+
+    #desc-complementar {
+        width: 500px;
+        margin-right: 6em;
+    }
+
+    .colecoes-1 {
+        width: 280px;
+        height: 330px;
+    }
+
+    .colecoes-2{
+        width: 280px;
+        height: 330px;
+        margin-right: 30em;
+    }
+
+
+
+    #galeria {
+        padding-top: 10vh;
+        text-align: center;
+        width: 70dvw;
+        margin:auto;
+    }
+
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.3em;
+        width: 500px;
+        margin-bottom: 3em;
+    }
+
+    .grupo-imagens {
+        width: 300px;
+        height: 360px;
+    }
+
+    figcaption {
+        margin-bottom: 2em;
+        padding-top: 0.5em;
+        font-size: 1.5em;
+        width: 360px;
+    }
+
+    #titulo-comentarios {
+        font-family: "Playfair Display", serif;
+        font-size: 2.3em;
+        width: 400px;
+        margin-bottom: 2em;
+    }
+
+    #comentarios {
+        margin-bottom: 2em;
+        width: 70dvw;
+        margin: auto;
+    }
+
+    .comentario p {
+        width: 17em;
+        font-size: 1.8em;
+        padding-left: 4.3em;
+        padding-top: 0.6em;
+    }
+
+    .comentarios {
+        margin-top: 1em;
+    }
+
+    .nome {
+        padding-top: 1em;
+    }
+
+    footer p {
+        font-size: 18px;
+        width: 20em;
     }
 }
